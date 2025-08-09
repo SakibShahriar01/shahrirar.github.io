@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md Sakibur Rahman | Portfolio</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.8rem;
+      letter-spacing: 1.2px;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      border-bottom: 3px solid #007acc;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      color: #007acc;
+      font-weight: 700;
+    }
+
+    /* About Me */
+    #about p {
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+
+    /* Skills */
+    #skills ul {
+      list-style: none;
+      padding-left: 0;
+      max-width: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    #skills li {
+      background: #007acc;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 5px rgb(0 122 204 / 0.3);
+    }
+
+    /* Projects */
+    #projects .project-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 700px;
+    }
+    @media (max-width: 600px) {
+      #projects .project-list {
+        grid-template-columns: 1fr;
+      }
+    }
+    .project-item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: box-shadow 0.3s ease;
+    }
+    .project-item:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .project-item h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #007acc;
+    }
+    .project-item p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    .project-item a {
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* Contact */
+    #contact p {
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+    #contact a {
+      display: inline-block;
+      margin-top: 8px;
+      font-weight: 600;
+      color: #007acc;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      color: #777;
+      border-top: 1px solid #ddd;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Md Sakibur Rahman</h1>
+    <p>CSE Student (C, C++, SQL Developer)</p>
+  </header>
+
+  <div class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Md Sakibur Rahman, a passionate CSE student with a strong foundation in C, C++, and SQL development. I enjoy solving programming challenges and building efficient software solutions. Currently, I am expanding my skills in database management and AI chatbot development to create impactful projects.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>SQL (MySQL, PostgreSQL)</li>
+        <li>Linux & Windows OS</li>
+        <li>Git & Version Control</li>
+        <li>VS Code</li>
+        <li>Data Structures & Algorithms</li>
+        <li>AI Chatbot Basics</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Merge Sort in C</h3>
+          <p>Implemented an efficient merge sort algorithm in C to sort large data sets with time complexity O(n log n).</p>
+          <a href="https://github.com/yourusername/merge-sort-c" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+        <div class="project-item">
+          <h3>SQL Database Project</h3>
+          <p>Designed and managed a small relational database using MySQL, including queries for data insertion, updating, and retrieval.</p>
+          <a href="https://github.com/yourusername/sql-database-project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+        <div class="project-item">
+          <h3>AI Chatbot (Basic)</h3>
+          <p>Built a simple chatbot to answer FAQs using Python and integrating basic AI logic for response automation.</p>
+          <a href="https://github.com/yourusername/ai-chatbot" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+        <div class="project-item">
+          <h3>Automation Script</h3>
+          <p>Created scripts to automate data extraction and processing tasks, improving efficiency and accuracy.</p>
+          <a href="https://github.com/yourusername/automation-scripts" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:rtnpeace39@gmail.com">rtnpeace39@gmail.com</a></p>
+      <p>
+        GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a><br/>
+        LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourusername</a>
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Md Sakibur Rahman. All rights reserved.
+  </footer>
+
+</body>
+</html>
